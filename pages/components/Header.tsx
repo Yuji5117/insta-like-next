@@ -1,10 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import MenuList from "./MenuList";
+
+import SearchInput from "./SearchInput";
 
 const Header = () => {
   return (
     <Wrapper>
-      <Title>Instagram Like</Title>
+      <Container>
+        <Title>Instagram Like</Title>
+        <SearchInput />
+        <MenuList />
+      </Container>
     </Wrapper>
   );
 };
@@ -12,8 +19,20 @@ const Header = () => {
 export default Header;
 
 const Wrapper = styled.header`
-  width: 100%;
   background-color: red;
+  width: 100%;
+  height: 68px;
 `;
-const Title = styled.h1``;
-// const Wrapper = styled.header``
+
+const Container = styled.div`
+  max-width: 680px;
+  height: 68px;
+  margin: 0 auto;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+`;
+
+const Title = styled.h1`
+  font-size: 24px;
+`;
