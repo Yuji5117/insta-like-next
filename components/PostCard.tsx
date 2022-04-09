@@ -5,7 +5,9 @@ const PostCard = () => {
   return (
     <Wrapper>
       <Header>ヘッド</Header>
-      <Body>画像</Body>
+      <Body>
+        <Image src="/test_image.png" alt="" />
+      </Body>
       <Footer>フッター</Footer>
     </Wrapper>
   );
@@ -30,4 +32,10 @@ const Body = styled.div`
 
 const Footer = styled.div`
   height: 140px;
+`;
+
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;

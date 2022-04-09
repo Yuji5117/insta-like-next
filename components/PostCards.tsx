@@ -15,6 +15,4 @@ export default PostCards;
 const Wrapper = styled.div`
   width: 100%;
   padding: 30px 0;
-  /* height: 680px;
-  background-color: red; */
 `;
