@@ -21,6 +21,7 @@ export default Header;
 const Wrapper = styled.header`
   width: 100%;
   height: 68px;
+  border-bottom: 1px solid #dbdbdb;
 `;
 
 const Container = styled.div`
