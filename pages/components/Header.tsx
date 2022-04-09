@@ -19,17 +19,16 @@ const Header = () => {
 export default Header;
 
 const Wrapper = styled.header`
-  background-color: red;
   width: 100%;
   height: 68px;
 `;
 
 const Container = styled.div`
   max-width: 680px;
-  height: 68px;
+  height: 100%;
   margin: 0 auto;
-  background-color: blue;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 `;
 
