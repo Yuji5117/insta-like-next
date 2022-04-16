@@ -37,7 +37,7 @@ const ListContainer = styled.ul`
   width: 100%;
   padding: 40px 0;
 
-  & * + * {
+  & > * + * {
     padding-top: 30px;
   }
 `;
