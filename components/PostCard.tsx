@@ -41,10 +41,13 @@ const Header = styled.div`
   width: 95%;
   margin: 0 auto;
   display: flex;
+  align-items: center;
 `;
 
 const Body = styled.div`
   height: 480px;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
 `;
 
 const Footer = styled.div`
