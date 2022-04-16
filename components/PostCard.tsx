@@ -1,14 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 
-const PostCard = () => {
+import PostHeader from "./PostHeader";
+import PostImage from "./PostImage";
+import PostFooter from "./PostFooter";
+
+interface PropsType {
+  name: string;
+  imgSrc: string;
+  content: string;
+}
+
+const PostCard = ({ name, imgSrc, content }: PropsType) => {
   return (
     <Wrapper>
-      <Header>ヘッド</Header>
+      <Header>
+        <PostHeader name={name} />
+      </Header>
       <Body>
-        <Image src="/test_image.png" alt="" />
+        <PostImage imgSrc={imgSrc} />
       </Body>
-      <Footer>フッター</Footer>
+      <Footer>
+        <PostFooter content={content} />
+      </Footer>
     </Wrapper>
   );
 };
@@ -24,6 +38,9 @@ const Wrapper = styled.div`
 
 const Header = styled.div`
   height: 60px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
 `;
 
 const Body = styled.div`
@@ -32,10 +49,6 @@ const Body = styled.div`
 
 const Footer = styled.div`
   height: 140px;
-`;
-
-const Image = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 95%;
+  margin: 0 auto;
 `;
