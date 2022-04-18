@@ -46,3 +46,8 @@ https://zenn.dev/nbr41to/articles/c0c691653e3d55
 ## Reactフラグメント
 Reactでは、二つ以上の要素を返すことができない。
 もし、同じ階層に二つ以上の要素を返したい場合は、`<> or <React.Fragment>`（Reactフラグメント）を使用することで解決できる
+
+
+
+# エラーの対処集
+## ReferenceError: document is not definedJest
